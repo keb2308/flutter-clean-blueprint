@@ -29,7 +29,7 @@ class AppBarUnauthorized extends StatelessWidget
           fontSize: 24,
         ),
       ),
-      bottom: true ? _createProgressIndicator() : null,
+      bottom: isLoading ? _createProgressIndicator() : null,
     );
   }
 
@@ -37,33 +37,12 @@ class AppBarUnauthorized extends StatelessWidget
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   PreferredSize _createProgressIndicator() => const PreferredSize(
-        preferredSize: Size(double.infinity, kAppBarProgressIndicatorHeight),
+        preferredSize: Size(double.infinity, 52),
         child: SizedBox(
-          height: kAppBarProgressIndicatorHeight,
+          height: 52,
           child: LinearProgressIndicator(
             color: Colors.blue,
           ),
         ),
       );
-}
-
-class _PopupMenu extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return PopupMenuButton(
-      itemBuilder: (context) {
-        return [
-          const PopupMenuItem<int>(
-            value: 0,
-            child: Text("Logout"),
-          ),
-        ];
-      },
-      onSelected: (value) {
-        if (value == 0) {
-          context.read<AuthCubit>().signOut();
-        }
-      },
-    );
-  }
 }

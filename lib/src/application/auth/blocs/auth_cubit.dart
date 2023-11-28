@@ -69,7 +69,7 @@ class AuthCubit extends Cubit<AuthState> {
   void _subscribe() {
     _authSubscription = authRepository.result.listen(
       (result) {
-        if (result == AuthResult.signedOut) if (result.isAuthenticated) {
+        if (result.isAuthenticated) {
           emit(const AuthState.authenticated());
         } else {
           emit(const AuthState.unauthenticated());
