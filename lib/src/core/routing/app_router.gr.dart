@@ -9,55 +9,23 @@
 
 part of 'app_router.dart';
 
-abstract class _$AppRouter extends RootStackRouter {
-  // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
+/// generated route for
+/// [AppBarAuthorized]
+class AppBarAuth extends PageRouteInfo<void> {
+  const AppBarAuth({List<PageRouteInfo>? children})
+      : super(
+          AppBarAuth.name,
+          initialChildren: children,
+        );
 
-  @override
-  final Map<String, PageFactory> pagesMap = {
-    ApplicationWrapper.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AppWrapper(),
-      );
+  static const String name = 'AppBarAuth';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AppBarAuthorized();
     },
-    SignInRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SignInPage(),
-      );
-    },
-    SignUpRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SignUpPage(),
-      );
-    },
-    Page1Route.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const Feature1Page(),
-      );
-    },
-    AppBarAuth.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AppBarAuthorized(),
-      );
-    },
-    ProfileRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ProfilePage(),
-      );
-    },
-    Page2Route.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const Feature2Page(),
-      );
-    },
-  };
+  );
 }
 
 /// generated route for
@@ -71,35 +39,12 @@ class ApplicationWrapper extends PageRouteInfo<void> {
 
   static const String name = 'ApplicationWrapper';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [SignInPage]
-class SignInRoute extends PageRouteInfo<void> {
-  const SignInRoute({List<PageRouteInfo>? children})
-      : super(
-          SignInRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'SignInRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [SignUpPage]
-class SignUpRoute extends PageRouteInfo<void> {
-  const SignUpRoute({List<PageRouteInfo>? children})
-      : super(
-          SignUpRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'SignUpRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AppWrapper();
+    },
+  );
 }
 
 /// generated route for
@@ -113,35 +58,12 @@ class Page1Route extends PageRouteInfo<void> {
 
   static const String name = 'Page1Route';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [AppBarAuthorized]
-class AppBarAuth extends PageRouteInfo<void> {
-  const AppBarAuth({List<PageRouteInfo>? children})
-      : super(
-          AppBarAuth.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'AppBarAuth';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [ProfilePage]
-class ProfileRoute extends PageRouteInfo<void> {
-  const ProfileRoute({List<PageRouteInfo>? children})
-      : super(
-          ProfileRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'ProfileRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const Feature1Page();
+    },
+  );
 }
 
 /// generated route for
@@ -155,5 +77,67 @@ class Page2Route extends PageRouteInfo<void> {
 
   static const String name = 'Page2Route';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const Feature2Page();
+    },
+  );
+}
+
+/// generated route for
+/// [ProfilePage]
+class ProfileRoute extends PageRouteInfo<void> {
+  const ProfileRoute({List<PageRouteInfo>? children})
+      : super(
+          ProfileRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProfileRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ProfilePage();
+    },
+  );
+}
+
+/// generated route for
+/// [SignInPage]
+class SignInRoute extends PageRouteInfo<void> {
+  const SignInRoute({List<PageRouteInfo>? children})
+      : super(
+          SignInRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SignInRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SignInPage();
+    },
+  );
+}
+
+/// generated route for
+/// [SignUpPage]
+class SignUpRoute extends PageRouteInfo<void> {
+  const SignUpRoute({List<PageRouteInfo>? children})
+      : super(
+          SignUpRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SignUpRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SignUpPage();
+    },
+  );
 }

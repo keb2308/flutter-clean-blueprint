@@ -77,8 +77,7 @@ Future<void> init() async {
   );
 
   getIt.registerLazySingleton<IConnectivityBroadcast>(
-    () => ConnectivityBroadcast(
-        connectionChecker: getIt<InternetConnectionCheckerPlus>()),
+    () => ConnectivityBroadcast(connectionChecker: getIt<InternetConnection>()),
   );
 
   // Data sources
@@ -112,8 +111,8 @@ Future<void> init() async {
   );
 
   // Other
-  getIt.registerFactory<InternetConnectionCheckerPlus>(
-    () => InternetConnectionCheckerPlus(),
+  getIt.registerFactory<InternetConnection>(
+    () => InternetConnection(),
   );
 
   getIt.registerFactory<AccessTokenInterceptor>(

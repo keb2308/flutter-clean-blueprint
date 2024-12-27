@@ -12,7 +12,7 @@ part of '../connectivity_states.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ConnectivityState {
@@ -78,29 +78,37 @@ class _$ConnectivityStateCopyWithImpl<$Res, $Val extends ConnectivityState>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ConnectivityState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
-abstract class _$$_ConnectivityInitialStateCopyWith<$Res> {
-  factory _$$_ConnectivityInitialStateCopyWith(
-          _$_ConnectivityInitialState value,
-          $Res Function(_$_ConnectivityInitialState) then) =
-      __$$_ConnectivityInitialStateCopyWithImpl<$Res>;
+abstract class _$$ConnectivityInitialStateImplCopyWith<$Res> {
+  factory _$$ConnectivityInitialStateImplCopyWith(
+          _$ConnectivityInitialStateImpl value,
+          $Res Function(_$ConnectivityInitialStateImpl) then) =
+      __$$ConnectivityInitialStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ConnectivityInitialStateCopyWithImpl<$Res>
-    extends _$ConnectivityStateCopyWithImpl<$Res, _$_ConnectivityInitialState>
-    implements _$$_ConnectivityInitialStateCopyWith<$Res> {
-  __$$_ConnectivityInitialStateCopyWithImpl(_$_ConnectivityInitialState _value,
-      $Res Function(_$_ConnectivityInitialState) _then)
+class __$$ConnectivityInitialStateImplCopyWithImpl<$Res>
+    extends _$ConnectivityStateCopyWithImpl<$Res,
+        _$ConnectivityInitialStateImpl>
+    implements _$$ConnectivityInitialStateImplCopyWith<$Res> {
+  __$$ConnectivityInitialStateImplCopyWithImpl(
+      _$ConnectivityInitialStateImpl _value,
+      $Res Function(_$ConnectivityInitialStateImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ConnectivityState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$_ConnectivityInitialState implements _ConnectivityInitialState {
-  const _$_ConnectivityInitialState();
+class _$ConnectivityInitialStateImpl implements _ConnectivityInitialState {
+  const _$ConnectivityInitialStateImpl();
 
   @override
   String toString() {
@@ -108,10 +116,10 @@ class _$_ConnectivityInitialState implements _ConnectivityInitialState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ConnectivityInitialState);
+            other is _$ConnectivityInitialStateImpl);
   }
 
   @override
@@ -187,31 +195,35 @@ class _$_ConnectivityInitialState implements _ConnectivityInitialState {
 }
 
 abstract class _ConnectivityInitialState implements ConnectivityState {
-  const factory _ConnectivityInitialState() = _$_ConnectivityInitialState;
+  const factory _ConnectivityInitialState() = _$ConnectivityInitialStateImpl;
 }
 
 /// @nodoc
-abstract class _$$_ConnectivityConnectedStateCopyWith<$Res> {
-  factory _$$_ConnectivityConnectedStateCopyWith(
-          _$_ConnectivityConnectedState value,
-          $Res Function(_$_ConnectivityConnectedState) then) =
-      __$$_ConnectivityConnectedStateCopyWithImpl<$Res>;
+abstract class _$$ConnectivityConnectedStateImplCopyWith<$Res> {
+  factory _$$ConnectivityConnectedStateImplCopyWith(
+          _$ConnectivityConnectedStateImpl value,
+          $Res Function(_$ConnectivityConnectedStateImpl) then) =
+      __$$ConnectivityConnectedStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ConnectivityConnectedStateCopyWithImpl<$Res>
-    extends _$ConnectivityStateCopyWithImpl<$Res, _$_ConnectivityConnectedState>
-    implements _$$_ConnectivityConnectedStateCopyWith<$Res> {
-  __$$_ConnectivityConnectedStateCopyWithImpl(
-      _$_ConnectivityConnectedState _value,
-      $Res Function(_$_ConnectivityConnectedState) _then)
+class __$$ConnectivityConnectedStateImplCopyWithImpl<$Res>
+    extends _$ConnectivityStateCopyWithImpl<$Res,
+        _$ConnectivityConnectedStateImpl>
+    implements _$$ConnectivityConnectedStateImplCopyWith<$Res> {
+  __$$ConnectivityConnectedStateImplCopyWithImpl(
+      _$ConnectivityConnectedStateImpl _value,
+      $Res Function(_$ConnectivityConnectedStateImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ConnectivityState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$_ConnectivityConnectedState implements _ConnectivityConnectedState {
-  const _$_ConnectivityConnectedState();
+class _$ConnectivityConnectedStateImpl implements _ConnectivityConnectedState {
+  const _$ConnectivityConnectedStateImpl();
 
   @override
   String toString() {
@@ -219,10 +231,10 @@ class _$_ConnectivityConnectedState implements _ConnectivityConnectedState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ConnectivityConnectedState);
+            other is _$ConnectivityConnectedStateImpl);
   }
 
   @override
@@ -298,30 +310,36 @@ class _$_ConnectivityConnectedState implements _ConnectivityConnectedState {
 }
 
 abstract class _ConnectivityConnectedState implements ConnectivityState {
-  const factory _ConnectivityConnectedState() = _$_ConnectivityConnectedState;
+  const factory _ConnectivityConnectedState() =
+      _$ConnectivityConnectedStateImpl;
 }
 
 /// @nodoc
-abstract class _$$_ConnectivityLoadingStateCopyWith<$Res> {
-  factory _$$_ConnectivityLoadingStateCopyWith(
-          _$_ConnectivityLoadingState value,
-          $Res Function(_$_ConnectivityLoadingState) then) =
-      __$$_ConnectivityLoadingStateCopyWithImpl<$Res>;
+abstract class _$$ConnectivityLoadingStateImplCopyWith<$Res> {
+  factory _$$ConnectivityLoadingStateImplCopyWith(
+          _$ConnectivityLoadingStateImpl value,
+          $Res Function(_$ConnectivityLoadingStateImpl) then) =
+      __$$ConnectivityLoadingStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ConnectivityLoadingStateCopyWithImpl<$Res>
-    extends _$ConnectivityStateCopyWithImpl<$Res, _$_ConnectivityLoadingState>
-    implements _$$_ConnectivityLoadingStateCopyWith<$Res> {
-  __$$_ConnectivityLoadingStateCopyWithImpl(_$_ConnectivityLoadingState _value,
-      $Res Function(_$_ConnectivityLoadingState) _then)
+class __$$ConnectivityLoadingStateImplCopyWithImpl<$Res>
+    extends _$ConnectivityStateCopyWithImpl<$Res,
+        _$ConnectivityLoadingStateImpl>
+    implements _$$ConnectivityLoadingStateImplCopyWith<$Res> {
+  __$$ConnectivityLoadingStateImplCopyWithImpl(
+      _$ConnectivityLoadingStateImpl _value,
+      $Res Function(_$ConnectivityLoadingStateImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ConnectivityState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
 
-class _$_ConnectivityLoadingState implements _ConnectivityLoadingState {
-  const _$_ConnectivityLoadingState();
+class _$ConnectivityLoadingStateImpl implements _ConnectivityLoadingState {
+  const _$ConnectivityLoadingStateImpl();
 
   @override
   String toString() {
@@ -329,10 +347,10 @@ class _$_ConnectivityLoadingState implements _ConnectivityLoadingState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ConnectivityLoadingState);
+            other is _$ConnectivityLoadingStateImpl);
   }
 
   @override
@@ -408,5 +426,5 @@ class _$_ConnectivityLoadingState implements _ConnectivityLoadingState {
 }
 
 abstract class _ConnectivityLoadingState implements ConnectivityState {
-  const factory _ConnectivityLoadingState() = _$_ConnectivityLoadingState;
+  const factory _ConnectivityLoadingState() = _$ConnectivityLoadingStateImpl;
 }

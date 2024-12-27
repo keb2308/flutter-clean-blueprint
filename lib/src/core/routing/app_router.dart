@@ -10,7 +10,7 @@ import 'package:clean_auth/src/presentation/shared/app_bar_authorized.dart';
 part 'app_router.gr.dart';
 
 @AutoRouterConfig()
-class AppRouter extends _$AppRouter {
+class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
         AutoRoute(

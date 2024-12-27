@@ -6,12 +6,13 @@ part of '../tokens_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TokensDTO _$$_TokensDTOFromJson(Map<String, dynamic> json) => _$_TokensDTO(
+_$TokensDTOImpl _$$TokensDTOImplFromJson(Map<String, dynamic> json) =>
+    _$TokensDTOImpl(
       idToken: json['idToken'] as String,
       refreshToken: json['refreshToken'] as String,
     );
 
-Map<String, dynamic> _$$_TokensDTOToJson(_$_TokensDTO instance) =>
+Map<String, dynamic> _$$TokensDTOImplToJson(_$TokensDTOImpl instance) =>
     <String, dynamic>{
       'idToken': instance.idToken,
       'refreshToken': instance.refreshToken,

@@ -2,7 +2,7 @@ import 'package:clean_auth/src/application/connectivity/interfaces/i_connectivit
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
 
 class ConnectivityBroadcast extends IConnectivityBroadcast {
-  final InternetConnectionCheckerPlus _connectionChecker;
+  final InternetConnection _connectionChecker;
 
   ConnectivityBroadcast({required connectionChecker})
       : _connectionChecker = connectionChecker {
@@ -10,8 +10,8 @@ class ConnectivityBroadcast extends IConnectivityBroadcast {
   }
 
   void _subscribe() {
-    _connectionChecker.onStatusChange.listen((InternetConnectionStatus status) {
-      if (status == InternetConnectionStatus.connected) {
+    _connectionChecker.onStatusChange.listen((InternetStatus status) {
+      if (status == InternetStatus.connected) {
         hasInternet(true);
       } else {
         hasInternet(false);
