@@ -13,7 +13,7 @@ class NoInternetDialog extends StatelessWidget {
       listener: (context, state) {
         state.whenOrNull(
           connected: () {
-            context.router.pop();
+            context.router.maybePop();
           },
         );
       },
